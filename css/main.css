@@ -259,5 +259,12 @@ textarea {
   h3 {
     page-break-after: avoid;
   }
+
+  .brand-text font-weight-bold{
+    text-align: center;
+  }
+
+ 
+
 }
 
