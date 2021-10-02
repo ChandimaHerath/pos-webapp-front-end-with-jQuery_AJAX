@@ -1,3 +1,22 @@
-#abc{
-    color: blue;
+#table-customer thead th:first-child,
+#table-customer tbody td:first-child,
+#table-customer tbody td:last-child
+
+ {
+    text-align: center;
+    
+
+}
+
+#table-customer tbody tr {
+
+    cursor: pointer;
+}
+
+#table-customer tbody td:last-child:hover .fas{
+    color: orangered;
+}
+
+#clear:hover{
+    color: red;
 }
