@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "clean": "rm -rf ./docs",
-    "build": "parcel build index.html 404.html manage-customers.html --out-dir ./docs",
+    "build": "parcel build index.html 404.html manage-customers.html manage-items.html place-order.html search-order.html --out-dir ./docs",
     "dev": "parcel serve index.html --open",
     "start": "npm run build && npm run dev"
   },

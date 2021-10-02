@@ -6,6 +6,8 @@
     <title>POS | Dashboard</title>
 
     <!-- Google Font: Source Sans Pro -->
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback"
@@ -56,6 +58,7 @@
       href="node_modules/admin-lte/plugins/summernote/summernote-bs4.min.css"
     />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/manage-customers.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   </head>
   <body class="hold-transition sidebar-mini layout-fixed">
@@ -154,39 +157,98 @@
         </div>
         <!-- /.sidebar -->
       </aside>
-
-      <!-- Content Wrapper. Contains page content -->
-      <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
-        <div class="content-header">
-          <div class="container-fluid">
-           
-            <!-- /.row -->
-          </div>
-          <!-- /.container-fluid -->
-        </div>
-        <!-- /.content-header -->
-        <!-- Main content -->
-        
-        <!-- /.content -->
-      </div>
-      <!-- /.content-wrapper -->
-
-
-      
-      <footer class="main-footer">
-      &nbsp
-        <div class="float-right d-none d-sm-inline-block">
-          Copyright &copy; 2021 - present <b>Chandima Herath</b>
-          All rights reserved.
-        </div>
-      </footer>
-
-      <!-- Control Sidebar -->
+ <!-- Content Wrapper. Contains page content -->
+ <div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container-fluid">
+     
+      <!-- /.row -->
     </div>
-    <!-- ./wrapper -->
+    <!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+  <!-- Main content -->
+  <section class="content">
+    <div class="container-fluid">
+      <!-- Small boxes (Stat box) -->
+      
+       
+       <div class="row">
+         <div class="col-12 col-lg-6">
+          <div class="card text-dark bg-light mb-3">
+            <div class="card-header"><strong> Customer Details </strong></div>
+            <div class="card-body">
+             
+              <form>
+                 <div class="mb-2">
+                    <label for="customer-id" class="form-label">Customer ID</label>
+                    <input id="customer-id" class="form-control" type="text" placeholder="Eg: C-001" aria-label="default input example">
+                 </div>
+                
+                 <div class="mb-2">
+                    <label for="formFile" class="form-label">Customer Name</label>
+                    <input id="customer-name" class="form-control" type="text" placeholder="Eg: Chandima Herath" aria-label="default input example">
+                 </div>
 
+                 <div class="mb-3">
+                    <label for="customer-address" class="form-label"> Customer Address</label>
+                    <input id="customer-address" class="form-control" type="text" placeholder="Eg: 3rd Street, Kandy" aria-label="default input example">
+                 </div>
+                 
+                 <div class="mb-2" style="float: right;">
+                  <button type="button" class="btn btn-secondary" style="padding-left:25px; padding-right:25px; margin-right: 2px;">Clear</button>
+                  <button type="button" class="btn btn-primary" style="padding-left:25px; padding-right:25px;">Save</button>
+                  
+                </div>
+
+              </form>
+
+              
+            </div>
+          </div>
+          
+        </div>
+
+
+         <div class="col-12 col-lg-6" >
+           
+          <div class="card text-dark bg-light mb-3">
+            <div class="card-header"> <strong> Customers </strong></div>
+            <div class="card-body">
+            
+             
+            </div>
+          </div>
+
+      </div>
+    </div>
+    
+  </div>
+
+       
+        
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+<footer class="main-footer">
+&nbsp
+  <div class="float-right d-none d-sm-inline-block">
+    Copyright &copy; 2021 - present <b>Chandima Herath</b>
+    All rights reserved.
+  </div>
+</footer>
+
+<!-- Control Sidebar -->
+</div>
+<!-- ./wrapper -->
     <!-- jQuery -->
+
     <script src="node_modules/admin-lte/plugins/jquery/jquery.min.js"></script>
     <!-- jQuery UI 1.11.4 -->
     <script src="node_modules/admin-lte/plugins/jquery-ui/jquery-ui.min.js"></script>
