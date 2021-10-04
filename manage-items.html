@@ -6,6 +6,8 @@
     <title>POS | Dashboard</title>
 
     <!-- Google Font: Source Sans Pro -->
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback"
@@ -56,6 +58,7 @@
       href="node_modules/admin-lte/plugins/summernote/summernote-bs4.min.css"
     />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/manage-items.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   </head>
   <body class="hold-transition sidebar-mini layout-fixed">
@@ -122,7 +125,7 @@
                   <p>Dashboard</p>
                 </a>
               </li>
-              <li class="nav-item ">
+              <li class="nav-item">
                 <a href="/manage-customers.html" class="nav-link ">
                   <i class="nav-icon fas fa-user-tag"></i>
                   <p>Manage Customers</p>
@@ -154,39 +157,164 @@
         </div>
         <!-- /.sidebar -->
       </aside>
-
-      <!-- Content Wrapper. Contains page content -->
-      <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
-        <div class="content-header">
-          <div class="container-fluid">
-           
-            <!-- /.row -->
-          </div>
-          <!-- /.container-fluid -->
-        </div>
-        <!-- /.content-header -->
-        <!-- Main content -->
-        
-        <!-- /.content -->
-      </div>
-      <!-- /.content-wrapper -->
-
-
-      
-      <footer class="main-footer">
-      &nbsp
-        <div class="float-right d-none d-sm-inline-block">
-          Copyright &copy; 2021 - present <b>Chandima Herath</b>
-          All rights reserved.
-        </div>
-      </footer>
-
-      <!-- Control Sidebar -->
+ <!-- Content Wrapper. Contains page content -->
+ <div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container-fluid">
+     
+      <!-- /.row -->
     </div>
-    <!-- ./wrapper -->
+    <!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+  <!-- Main content -->
+  <section class="content">
+    <div class="container-fluid">
+      <!-- Small boxes (Stat box) -->
+      
+       
+       <div class="row">
+         <div class="col-12 col-xl-6">
+          <div class="card text-dark bg-light mb-3">
+            <div class="card-header"><strong> Item Details </strong></div>
+            <div class="card-body ">
+             
+              <form>
+                 <div class="mb-2">
+                    <label for="customer-id" class="form-label">Item Code</label>
+                    <input id="customer-id" class="form-control" type="text" placeholder="Eg: I-001" aria-label="default input example">
+                 </div>
+                
+                 <div class="mb-2">
+                    <label for="formFile" class="form-label">Item Description</label>
+                    <input id="customer-name" class="form-control" type="text" placeholder="Eg: iPhone 13" aria-label="default input example">
+                 </div>
 
+                 <div class="mb-3">
+                    <label for="customer-address" class="form-label"> Unit Price</label>
+                    <input id="customer-address" class="form-control" type="text" placeholder="Eg: 160000" aria-label="default input example">
+                 </div>
+
+                 <div class="mb-3">
+                    <label for="customer-address" class="form-label"> Quantity on Hand</label>
+                    <input id="customer-address" class="form-control" type="text" placeholder="Eg: 10" aria-label="default input example">
+                 </div>
+                 
+                 <div class="mb-2" style="float: right;">
+                  <button type="button" class="btn btn-secondary" style="padding-left:25px; padding-right:25px; margin-right: 2px;"><span id="clear">Clear</span></button>
+                  <button type="button" class="btn btn-primary" style="padding-left:25px; padding-right:25px;"><span id="save">Save</span></button>
+                  
+                </div>
+
+              </form>
+
+              
+            </div>
+          </div>
+          
+        </div>
+
+
+         <div class="col-12 col-xl-6" >
+           
+          <div class="card text-dark bg-light mb-3">
+            <div class="card-header"> <strong> Items </strong></div>
+            <div class="card-body">
+              <table id= "table-customer" class="table table-primary table-bordered table-hover  table-striped">
+                <thead>
+                  <tr>
+                    <th>Item Code</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>QTY</th>
+                    <th></th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>I-001</td>
+                    <td>iphone</td>
+                    <td>160000</td>
+                    <td>10</td>
+                    <td><i class="fas fa-trash"></i></td>
+                  </tr>
+
+                  <tr>
+                    <td>I-001</td>
+                    <td>iphone</td>
+                    <td>160000</td>
+                    <td>10</td>
+                    <td><i class="fas fa-trash"></i></td>
+                  </tr>
+
+                  <tr>
+                    <td>I-001</td>
+                    <td>iphone</td>
+                    <td>160000</td>
+                    <td>10</td>
+                    <td><i class="fas fa-trash"></i></td>
+                  </tr>
+                </tbody>
+                <tfoot >
+                  <tr>
+                    <th colspan="4">
+                      <nav aria-label="...">
+                        <ul class="pagination">
+                          <li class="page-item disabled">
+                            <span class="page-link">Previous</span>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item active" aria-current="page">
+                            <span class="page-link">2</span>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </th>
+                  </tr>
+              </tfoot>
+                
+
+              </table>
+
+              
+             
+            </div>
+          </div>
+
+      </div>
+    </div>
+    
+  </div>
+
+       
+        
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+<footer class="main-footer">
+&nbsp
+  <div class="float-right d-none d-sm-inline-block">
+    Copyright &copy; 2021 - present <b>Chandima Herath</b>
+    All rights reserved.
+  </div>
+</footer>
+
+<!-- Control Sidebar -->
+</div>
+<!-- ./wrapper -->
     <!-- jQuery -->
+
     <script src="node_modules/admin-lte/plugins/jquery/jquery.min.js"></script>
     <!-- jQuery UI 1.11.4 -->
     <script src="node_modules/admin-lte/plugins/jquery-ui/jquery-ui.min.js"></script>

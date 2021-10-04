@@ -1,0 +1,43 @@
+#table-customer thead th:first-child,
+#table-customer tbody td:first-child,
+#table-customer tbody td:last-child
+
+ {
+    text-align: center;
+    
+
+}
+
+#table-customer tbody tr {
+
+    cursor: pointer;
+}
+
+#table-customer tbody td:last-child:hover .fas{
+    color: orangered;
+}
+
+#clear:hover{
+    color: red;
+}
+
+#table-customer tfoot nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+#table-customer tfoot nav>ul {
+    margin-bottom: 0px;
+}
+
+.row .card-body{
+    min-height: 414.08px;
+}
+
+@media all and(max-width:1199px)
+{
+    footer{
+        position: relative;
+    }
+}
