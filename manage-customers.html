@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>POS | Dashboard</title>
+    
 
     <!-- Google Font: Source Sans Pro -->
 <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -189,22 +190,22 @@
               <form>
                  <div class="mb-2">
                     <label for="customer-id" class="form-label">Customer ID</label>
-                    <input id="customer-id" class="form-control" type="text" placeholder="Eg: C-001" aria-label="default input example">
+                    <input id="txt-id" class="form-control" type="text" placeholder="Eg: C-001" aria-label="default input example">
                  </div>
                 
                  <div class="mb-2">
                     <label for="formFile" class="form-label">Customer Name</label>
-                    <input id="customer-name" class="form-control" type="text" placeholder="Eg: Chandima Herath" aria-label="default input example">
+                    <input id="txt-name" class="form-control" type="text" placeholder="Eg: Chandima Herath" aria-label="default input example">
                  </div>
 
                  <div class="mb-3">
                     <label for="customer-address" class="form-label"> Customer Address</label>
-                    <input id="customer-address" class="form-control" type="text" placeholder="Eg: 3rd Street, Kandy" aria-label="default input example">
+                    <input id="txt-address" class="form-control" type="text" placeholder="Eg: 3rd Street, Kandy" aria-label="default input example">
                  </div>
                  
                  <div class="mb-2" style="float: right;">
                   <button type="button" class="btn btn-secondary" style="padding-left:25px; padding-right:25px; margin-right: 2px;"><span id="clear">Clear</span></button>
-                  <button type="button" class="btn btn-primary" style="padding-left:25px; padding-right:25px;"><span id="save">Save</span></button>
+                  <button id ="btn-save" type="button" class="btn btn-primary" style="padding-left:25px; padding-right:25px;"><span id="save">Save</span></button>
                   
                 </div>
 
@@ -312,9 +313,7 @@
 <!-- ./wrapper -->
     <!-- jQuery -->
 
-    <script src="node_modules/admin-lte/plugins/jquery/jquery.min.js"></script>
-    <!-- jQuery UI 1.11.4 -->
-    <script src="node_modules/admin-lte/plugins/jquery-ui/jquery-ui.min.js"></script>
+    
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
     <script>
       $.widget.bridge("uibutton", $.ui.button);
