@@ -8,11 +8,13 @@
     "start": "npm run build && npm run dev"
   },
   "devDependencies": {
+    "@types/jquery": "^3.5.6",
     "cssnano": "^5.0.8",
     "parcel-bundler": "^1.12.4",
     "postcss": "^8.3.9"
   },
   "dependencies": {
-    "admin-lte": "^3.1.0"
+    "admin-lte": "^3.1.0",
+    "jquery": "^3.6.0"
   }
 }
