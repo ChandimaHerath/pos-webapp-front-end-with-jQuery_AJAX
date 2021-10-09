@@ -1,4 +1,4 @@
-# Web App front end using adminLTE
+# Web App using adminLTE and raw AJAX 
 
 ## Version
 1.0.0
