@@ -9,7 +9,7 @@ Copyright © Chandima Herath. All Rights Reserved. License under the [MIT](LICEN
 -----
 ## About
 
-This is a front-end for a web app which is developed using HTML CSS and mainly adminLTE and Boostrap. This lets the user to deal with basic crud operations of a point of sales system. Redesigning and distribution is allowed.
+This is a front-end for a web app which is developed using HTML CSS and mainly adminLTE and Boostrap.The API connectivity gained using AJAX. This lets the user to deal with basic crud operations of a point of sales system. Redesigning and distribution is allowed.
 
 ----
 ## How to Use
@@ -24,20 +24,20 @@ This is a front-end for a web app which is developed using HTML CSS and mainly a
 
 -----
 -----
-![Dashboard](/img/Dashboard.png)
+![Dashboard](img/Dashboard.PNG)
 
 ---
 
-![Dashboard](/img/manage-customers.png)
+![Dashboard](/img/manage-customers.PNG)
 
 ----
-![Dashboard](/img/Manage-items.png)
+![Dashboard](/img/Manage-items.PNG)
 
 ---
-![Dashboard](/img/Place-order.png)
+![Dashboard](/img/Place-order.PNG)
 
 ---
-![Dashboard](/img/Search-orders.png)
+![Dashboard](/img/Search-orders.PNG)
 
 ----
 ----
