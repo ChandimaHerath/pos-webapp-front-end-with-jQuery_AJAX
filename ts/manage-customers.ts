@@ -118,3 +118,30 @@ function saveCustomer(customer: Customer): void {
     http.send(JSON.stringify(customer));
 
 }
+
+function deleteCustomer(id: string): void {
+    const http = new XMLHttpRequest();
+
+    http.onreadystatechange = () => {
+
+        if (http.readyState === http.DONE) {
+
+            if (http.status !== 204) {
+                alert("Failed to delete customer, try again...!");
+                return;
+            }
+
+        
+        }
+
+    };
+
+    http.open('DELETE', CUSTOMERS_SERVICE_API + `?id=${id}`, true);
+
+    http.send();
+}
+
+$('#btn-clear').on('click', () => {
+    $("#tbl-customers tbody tr.selected").removeClass('selected');
+    $("#txt-id").removeAttr('disabled').trigger('focus');
+});

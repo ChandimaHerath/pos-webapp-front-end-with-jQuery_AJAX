@@ -1,4 +1,4 @@
-export class Items{
+export class Item{
     public constructor(
         public code:string, 
         public description:string, 
