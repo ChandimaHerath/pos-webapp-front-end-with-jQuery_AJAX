@@ -1,10 +1,8 @@
 import { Order } from "./dto/search-order";
-import { Pagination } from "./dto/pagination";
 
 const BASE_API = 'http://localhost:8080/pos';
 const ORDERS_SERVICE_API = `${BASE_API}/orders`;
 const PAGE_SIZE = 6;
-const PAGINATION = new Pagination($('.pagination'),PAGE_SIZE,0,searchOrders);
 
 searchOrders();
 
@@ -48,10 +46,9 @@ function searchOrders():void{
             $('#tbl-orders tbody').append(rowHtml);
         });        
 
-        PAGINATION.reInitialize(+(http.getResponseHeader('X-Total-Count').split('/')[0]),PAGINATION.selectedPage,PAGE_SIZE);
      }
 
-     http.open('GET',ORDERS_SERVICE_API + `?page=${PAGINATION.selectedPage}&size=${PAGE_SIZE}&q=${$("#txt-search").val()}`);
+     //http.open(); Url Goes Here
 
      http.send();
 }
